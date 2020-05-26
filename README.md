@@ -8,7 +8,11 @@
 
 ## Descrição
 
-Se trata de uma aplicação para filtrar usuários 👨‍💻 e mostrar estatísticas 📊📈 a partir de um filtro definido. 
+É possível fazer o filtro de busca entre 100 usuários pre-definidos a partir da combinação de letras utilizadas na área de input pelo usuário. Ao clicar no botão "BUSCAR" ou apertar a tecla "ENTER" do teclado, serão exibidios:
+
+- À esquerda ➡️ Os usuários encontrados a partir do filtro; 👨‍💻
+- À direita ➡️ Estatísticas desses usuários filtrados (Gênero (masculino ou feminino), Soma das idades e Média das idades). 📊📈
+
 ## Tecnologias utilizadas
 
 * JavaScript
