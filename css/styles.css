@@ -1,0 +1,55 @@
+body {
+  padding: 10px;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+
+  border-radius: 50%;
+}
+
+h3 {
+  margin: 10px 0px 20px 10px;
+}
+
+h6 {
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+.user-container {
+  display: flex;
+  margin: 20px auto;
+  width: 80%;
+}
+
+.user {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  margin: 5px 0px;
+}
+
+#found-users-area {
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin-right: 10px;
+  width: 55%;
+}
+
+#statistics-area {
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin-right: 10px;
+  width: 45%;
+  height: 210px;
+}
+
+.bold {
+  font-weight: bold;
+}
