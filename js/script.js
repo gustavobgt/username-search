@@ -90,7 +90,7 @@ async function fetchUsers() {
 
   preLoader('');
 
-  console.log('Usuários carregados com sucesso!');
+  console.log('Users loaded successfully!');
 
   inputSearch.focus();
 }
@@ -127,7 +127,7 @@ function renderFilteredUsers() {
   filteredUsers.innerHTML = '';
   filterTitle.innerHTML = '';
 
-  filterTitle.textContent = `${filteredUsersList.length} usuário(s) encontrado(s)`;
+  filterTitle.textContent = `${filteredUsersList.length} user(s) found`;
 
   let usersHTML = '<div>';
 
@@ -140,7 +140,7 @@ function renderFilteredUsers() {
         <img src="${picture}" alt ="${name}">
       </div>
       <div>
-        <h6>${name}, ${age} anos</h6>
+        <h6>${name}, ${age} years old</h6>
       </div>
     </div>
     `;
@@ -156,7 +156,7 @@ function renderUsersStatistics() {
   userStatistics.innerHTML = '';
   statisticsTitle.innerHTML = '';
 
-  statisticsTitle.textContent = `Estatísticas`;
+  statisticsTitle.textContent = `Statistics`;
 
   const numberOfMales = filteredUsersList.reduce((accumulator, current) => {
     const total = current.gender === 'male' ? accumulator + 1 : accumulator;
@@ -174,10 +174,10 @@ function renderUsersStatistics() {
 
   const statisticsHTML = `
   <div>
-    <h6><span class="bold">Sexo masculino:</span> ${numberOfMales} pessoa(s)</h6>
-    <h6><span class="bold">Sexo feminino:</span> ${numberOfFemales} pessoa(s)</h6>
-    <h6><span class="bold">Soma das idades:</span> ${sumOfAges} anos</h6>
-    <h6><span class="bold">Média das idades:</span> ${avarageAges} anos</h6>
+    <h6><span class="bold">Male(s):</span> ${numberOfMales} people(s)</h6>
+    <h6><span class="bold">Female(s):</span> ${numberOfFemales} people(s)</h6>
+    <h6><span class="bold">Sum of Ages:</span> ${sumOfAges} years old</h6>
+    <h6><span class="bold">Average Ages:</span> ${avarageAges} years old</h6>
   </div>
   `;
 
