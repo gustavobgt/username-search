@@ -15,7 +15,7 @@
 
 \*Obs: Caso não tenha nada escrito na caixa de texto não será possível fazer a busca
 
-## Tecnologias utilizadas
+## 🚀 Tecnologias utilizadas
 
 - JavaScript
 - HTML5
