@@ -23,14 +23,23 @@ h6 {
 .user-container {
   display: flex;
   margin: 20px auto;
-  width: 80%;
+  width: 100%;
 }
 
 .user {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 5px;
   display: flex;
   flex-direction: row;
   align-items: stretch;
   margin: 5px 0px;
+}
+
+.user:hover {
+  background: #38ada9;
+  border: 1px solid black;
+  transition: all 0.8s;
 }
 
 #found-users-area {
@@ -38,7 +47,13 @@ h6 {
   border: 1px solid grey;
   border-radius: 10px;
   margin-right: 10px;
-  width: 55%;
+  width: 70%;
+}
+
+#filtered-users {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 #statistics-area {
@@ -46,7 +61,7 @@ h6 {
   border: 1px solid grey;
   border-radius: 10px;
   margin-right: 10px;
-  width: 45%;
+  width: 30%;
   height: 210px;
 }
 

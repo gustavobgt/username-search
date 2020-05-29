@@ -140,7 +140,7 @@ function renderFilteredUsers() {
         <img src="${picture}" alt ="${name}">
       </div>
       <div>
-        <h6>${name}, ${age} years old</h6>
+        <h6>${name} <br> ${age} years old</h6>
       </div>
     </div>
     `;
