@@ -12,27 +12,15 @@ let searchButton = null;
 
 window.addEventListener('load', () => {
   function searchUsers(event) {
-    function ableButton(element) {
-      element.classList.remove('disabled');
-      element.classList.add('waves-effect');
-      element.classList.add('waves-light');
-    }
-
-    function disableButton(element) {
-      element.classList.remove('waves-effect');
-      element.classList.remove('waves-light');
-      element.classList.add('disabled');
-    }
-
     let hasText = !!event.target.value && event.target.value.trim() !== '';
     if (!hasText) {
-      disableButton(searchButton);
+      searchButton.setAttribute('disabled', '');
       clearInput();
 
       return;
     }
 
-    ableButton(searchButton);
+    searchButton.removeAttribute('disabled');
 
     filteredUsersList = allUsersList
       .filter((user) => {
@@ -100,7 +88,7 @@ function preLoader(startOrEnd) {
 
   if (startOrEnd === 'starting-search') {
     preLoader.innerHTML = `
-    <div class="spinner-border text-secondary mb-3" role="status">
+    <div class="spinner-border text-light mb-3" role="status">
     <span class="sr-only">Loading...</span>
   </div>
   `;
@@ -119,28 +107,32 @@ function renderFilteredUsers() {
   filteredUsers.innerHTML = '';
   filterTitle.innerHTML = '';
 
-  filterTitle.textContent = `${filteredUsersList.length} user(s) found`;
+  filterTitle.textContent = `👤 ${filteredUsersList.length} user(s) found`;
 
-  let usersHTML = '<div>';
+  let usersHTML = `<div class="container">
+                       <div class="row">`;
 
   filteredUsersList.forEach((user) => {
     const { name, age, picture } = user;
 
     const userHTML = `
-    <div class='user '>
-      <div>
-        <img src="${picture}" alt ="${name}">
-      </div>
-      <div>
-        <h6>${name} <br> ${age} years old</h6>
-      </div>
+    <div class="col-md-6 p-2">
+        <div class='user'>
+          <div>
+            <img src="${picture}" alt ="${name}">
+          </div>
+          <div class="text-center">
+            <h6>${name} <br> ${age} years old</h6>
+          </div>
+        </div>
     </div>
     `;
 
     usersHTML += userHTML;
   });
 
-  usersHTML += '</div>';
+  usersHTML += `</div>
+  </div>`;
   filteredUsers.innerHTML = usersHTML;
 }
 
@@ -166,10 +158,10 @@ function renderUsersStatistics() {
 
   const statisticsHTML = `
   <div>
-    <h6><span class="bold">Male(s):</span> ${numberOfMales} people(s)</h6>
-    <h6><span class="bold">Female(s):</span> ${numberOfFemales} people(s)</h6>
-    <h6><span class="bold">Sum of Ages:</span> ${sumOfAges} years old</h6>
-    <h6><span class="bold">Average Ages:</span> ${avarageAges} years old</h6>
+    <h6><span class="font-weight-bold">Male(s):</span> ${numberOfMales} people(s)</h6>
+    <h6><span class="font-weight-bold">Female(s):</span> ${numberOfFemales} people(s)</h6>
+    <h6><span class="font-weight-bold">Sum of Ages:</span> ${sumOfAges} years old</h6>
+    <h6><span class="font-weight-bold">Average Ages:</span> ${avarageAges} years old</h6>
   </div>
   `;
 

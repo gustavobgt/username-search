@@ -24,27 +24,34 @@
       crossorigin="anonymous"
     />
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./css/styles.css" />
 
     <title>Username Search</title>
   </head>
-  <body>
+  <body class="bg-secondary">
     <!-- Início do header -->
     <header>
       <div class="container text-center">
         <div>
-          <a href="" class="text-secondary">
+          <a href="" class="text-light">
             <i class="fas fa-users fa-5x"></i>
           </a>
-          <h1 class="display-4">Username Search</h1>
+          <h1 class="text-light">
+            Username Search
+          </h1>
         </div>
 
         <div id="pre-loader" class="center"></div>
 
         <div id="search-area">
           <div class="container text-center">
-            <i class="fas fa-search"></i>
-            <label for="search">Search: </label>
+            <i class="fas fa-search text-light"></i>
+            <label class="text-light" for="search">Search: </label>
             <div class="input-group input-group-md">
               <input
                 type="text"
@@ -56,9 +63,10 @@
                 <button
                   type="button"
                   id="search-button"
-                  class="btn btn-secondary"
+                  class="btn btn-primary"
+                  disabled
                 >
-                  Search
+                  SEARCH
                 </button>
               </div>
             </div>
@@ -88,18 +96,26 @@
       </div>
     </section>-->
     <section class="mt-3">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-md-6">
-            <div id="found-users-area" class="border border-secondary rounded">
-              <h3 id="filter-title">No Users Found</h3>
-              <div id="filtered-users"></div>
+          <div class="col-sm-4 mb-3">
+            <div
+              id="statistics-area"
+              class="text-center bg-light border border-dark rounded"
+            >
+              <h3 id="statistics-title">
+                Nothing to display
+              </h3>
+              <div id="users-statistics"></div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div id="statistics-area" class="border border-secondary rounded">
-              <h3 id="statistics-title">Nothing to display</h3>
-              <div id="users-statistics"></div>
+          <div class="col-sm-8">
+            <div
+              id="found-users-area"
+              class="bg-light border border-dark rounded"
+            >
+              <h3 id="filter-title" class="text-center">No Users Found</h3>
+              <div id="filtered-users" class="mx-2"></div>
             </div>
           </div>
         </div>

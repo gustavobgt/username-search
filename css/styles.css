@@ -2,6 +2,10 @@ body {
   padding: 10px;
 }
 
+h1 {
+  font-family: 'Oswald', sans-serif;
+}
+
 img {
   width: 50px;
   height: 50px;
@@ -21,42 +25,21 @@ h6 {
 }
 
 .user {
-  border: 1px solid lightgray;
+  box-shadow: 2px 2px #888888;
+  border: 2px solid lightgray;
   border-radius: 5px;
   padding: 5px;
   display: flex;
   flex-direction: row;
-  align-items: stretch;
-  margin: 5px 0px;
+  align-items: center;
 }
 
 .user:hover {
-  background: #38ada9;
-  border: 1px solid black;
+  box-shadow: none;
+  background-color: #007bff;
+  color: white;
   transition: all 0.8s;
-}
-
-#found-users-area {
-  padding: 5px;
-  margin-right: 10px;
-  width: 90%;
-}
-
-#filtered-users {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-#statistics-area {
-  padding: 5px;
-  margin-right: 10px;
-  width: 30%;
-  height: 210px;
-}
-
-.bold {
-  font-weight: bold;
+  cursor: pointer;
 }
 
 #search-area {
