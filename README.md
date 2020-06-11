@@ -1,13 +1,13 @@
 # username-search
 
-## Description
-Username Search web application can filter users by the combination of letters provided. You just have to click the SEARCH button or press ENTER to instantly lists results on the screen. It also displays some simple statistics about the found users.
+## 📖 Description
+Username Search web application can filter users by the combination of letters provided. You just have to click the "SEARCH" button or press "ENTER" on your keyboard to instantly lists results on the screen. It also displays some simple statistics about the found users.
 
-It has a responsive web design making the web page render well on a variety of devices.
+It has a responsive web design making the web page render well on a variety of devices 📱.
 
-You can try it out here: <a href="https://gustavobgt.github.io/username-search/">web-application</a>
+You can try it out here: <a href="https://gustavobgt.github.io/username-search/">🌐 web-application</a>
 
-## Screenshots
+## 📸 Screenshots
 - Desktop display
 <p align="center">
 <img src="https://github.com/gustavobgt/userFilterAndStatistics-webApplication/blob/master/assets/img/desktop-display.png" width="650px">
