@@ -15,7 +15,7 @@ You can try it out here: <a href="https://gustavobgt.github.io/username-search/"
 
 - Mobile display
 <p align="center">
-<img src="https://github.com/gustavobgt/userFilterAndStatistics-webApplication/blob/master/assets/img/mobile-display.png" height="450px">
+<img src="https://github.com/gustavobgt/userFilterAndStatistics-webApplication/blob/master/assets/img/mobile-display.png" height="500px">
 </p>
 
 ## 🚀 Technologies
@@ -23,4 +23,4 @@ You can try it out here: <a href="https://gustavobgt.github.io/username-search/"
 - JavaScript
 - HTML5
 - CSS3
-- Bootstrap
+- Bootstrap 4
